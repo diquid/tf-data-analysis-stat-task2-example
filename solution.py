@@ -17,4 +17,4 @@ def solution(p: float, x: np.array) -> tuple:
 #     return loc - scale * norm.ppf(1 - alpha / 2), \
 #            loc - scale * norm.ppf(alpha / 2)
     return (maximum - ((maximum-0.017)* norm.ppf(1 - alpha / 2) / np.sqrt(2*len(x))),
-           (maximum + ((maximum-0.017)* norm.ppf(1 - alpha / 2) / np.sqrt(2*len(x)))
+           maximum + ((maximum-0.017)* norm.ppf(1 - alpha / 2) / np.sqrt(2*len(x))))
